@@ -1,0 +1,8 @@
+/01_raw_data
+/02_read_QC
+/03_alignment
+/04_BAM_processing
+/05_quality_calibration
+/06_variant_calling
+/07_annotation
+.apptainer-tmp
