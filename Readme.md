@@ -101,7 +101,10 @@ Submit jobs from the project root, for example:
 cd /data/users/jli/cancergenomics
 sbatch scripts/16_run_rscript.sh
 ```
-
+Monitoring jobs, for example:
+```bash
+squeue -u jli
+```
 Each script is submitted separately; there is currently no single workflow launcher. Run scripts in dependency order and confirm that upstream jobs succeed before starting downstream jobs. 
 
 
