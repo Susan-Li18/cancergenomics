@@ -5,11 +5,11 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --job-name=fastqc
 #SBATCH --partition=pibu_el8
-#SBATCH --output=/data/users/jli/cancergenomics/read_QC/fastqc/output_fastqc_%j.o
-#SBATCH --error=/data/users/jli/cancergenomics/read_QC/fastqc/error_fastqc_%j.e
+#SBATCH --output=/data/users/jli/cancergenomics/02_read_QC/fastqc/output_fastqc_%j.o
+#SBATCH --error=/data/users/jli/cancergenomics/02_read_QC/fastqc/error_fastqc_%j.e
 
-INPUTDIR="/data/users/jli/cancergenomics/raw_data/VAR_CALLING/fastq"
-OUTDIR="/data/users/jli/cancergenomics/read_QC/fastqc"
+INPUTDIR="/data/users/jli/cancergenomics/01_raw_data/VAR_CALLING/fastq"
+OUTDIR="/data/users/jli/cancergenomics/02_read_QC/fastqc"
 
 mkdir -p $OUTDIR
 # run fastqc for normal
